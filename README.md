@@ -1,4 +1,4 @@
-# commercetools-dev-frontend
+# ci/cd demo
 
 ## Build Setup
 
