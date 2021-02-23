@@ -11,9 +11,9 @@
       ></b-form-radio-group>
     </b-form-group>
     <div class="sel-info">
-      <b-alert  v-if="selected === 'credit_card'" show variant="info">Please provide your credit card details</b-alert>
-      <b-alert  v-if="selected === 'credit_approval'" show variant="warning">Please provide your credit card details</b-alert>
-      <b-alert  v-if="selected === 'ach_wire_check'" show variant="success">Please provide your ACH/Wire/Check details</b-alert>
+      <b-alert  v-if="selected === 'credit_card'" show variant="info">Please provide your CREDIT CARD details</b-alert>
+      <b-alert  v-if="selected === 'credit_approval'" show variant="warning">Please provide your CREDIT APPROVAL details</b-alert>
+      <b-alert  v-if="selected === 'ach_wire_check'" show variant="success">Please provide your ACH/WIRE/CHECK details</b-alert>
     </div>
   </div>
 </template>

@@ -17,21 +17,20 @@ describe('Form Registration', () => {
 
     test('is a Vue instance', () => {
         expect(wrapper.vm).toBeTruthy()
-        console.log('TEST: Success')
     })
 
-    // test('Payment Mode of Credit_Approval Selection working fine', () => {
+    test('Payment Mode of Credit_Approval Selection working fine', async() => {
 
-    //     //Selet the Radio button.
-    //     const radio = wrapper.findAll('input');
-    //     console.log(radio, radio.length)
-    //     // await radio.trigger('click');
+        //Selet the Second Radio button.
+        const radio = wrapper.findAll('input[type="radio"]').at(1);
 
-    //     // const messageDiv = wrapper.find('.alert-warning');
-        
-    //     // console.log(messageDiv, messageDiv.length);
-    //     // expect(wrapper.find('.alert-warning').isVisible()).toBe(true)
-    //     // Assertions
-    //     expect(true).toBe(true)
-    // })
+        //Click the Button.
+        await radio.trigger('click');
+
+        //Find the "warning alert" in the wrapper
+        const messageDiv = wrapper.findAll('.alert-warning').at(0)
+
+        //Expect that warning div is visible
+        expect(wrapper.find('.alert-warning').isVisible()).toBe(true)
+    })
 })
