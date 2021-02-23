@@ -1,20 +1,20 @@
-# commercetools-dev-frontend
+# ci/cd demo
 
 ## Build Setup
 
 ```bash
-# install dependencies
+# install command
 $ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+# test command
+$ yarn test
 
-# build for production and launch server
+# build command
 $ yarn build
+
+# launch server
 $ yarn start
 
-# generate static project
-$ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
